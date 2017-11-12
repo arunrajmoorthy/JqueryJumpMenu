@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+	     <title> Animated Screen Menu </title>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>		 
+	     <link rel="stylesheet" href="style.css"> 
+	 </head>
+
+	 <body>
+	 
+	     <nav>
+             <ul>
+			     <li id="pop-up-btn-1"> <a href="#"> <i class="fa fa-home" aria-hidden="true"></i> </a> </li>
+			     <li id="pop-up-btn-2"> <a href="#"> <i class="fa fa-desktop" aria-hidden="true"></i> </a> </li>
+			     <li id="pop-up-btn-3"> <a href="#"> <i class="fa fa-cogs" aria-hidden="true"></i> </a> </li>
+			     <li id="pop-up-btn-4"> <a href="#"> <i class="fa fa-picture-o" aria-hidden="true"></i> </a> </li>
+			 </ul> 
+		 </nav>	
+		 
+		 <div id="pop-up-window-1" class="pop-up-style">
+		     
+		 </div>
+		 
+		 <div id="pop-up-window-2" class="pop-up-style">
+		     
+		 </div>
+		 
+		 <div id="pop-up-window-3" class="pop-up-style">
+		     
+		 </div>
+		 
+		 <div id="pop-up-window-4" class="pop-up-style">
+		     
+		 </div>
+		 
+		 <script>
+		 
+
+			 
+			     $('#pop-up-btn-1').click(
+                        function(){
+						    $("#pop-up-window-1").addClass('animate-to-bottom');
+							
+							 setTimeout(function() {
+									$("#pop-up-window-1").addClass('animate-zoom');
+                             }, 1000);
+							
+							for(i = 0; i < 5; i++) {
+							      var popUpNumbers = $("#pop-up-window-"+i);
+								  if (i === 1) { continue; }
+							      popUpNumbers.removeClass('animate-to-bottom');
+							      popUpNumbers.removeClass('animate-zoom');
+							}
+							
+						    
+						}
+				 );
+				 
+				  $('#pop-up-btn-2').click(
+                        function(){
+						    $("#pop-up-window-2").addClass('animate-to-bottom');
+							
+							 setTimeout(function() {
+									$("#pop-up-window-2").addClass('animate-zoom');
+                             }, 1500);
+							
+						    for(i = 0; i < 5; i++) {
+							      var popUpNumbers = $("#pop-up-window-"+i);
+								  if (i === 2) { continue; }
+							      popUpNumbers.removeClass('animate-to-bottom');
+							      popUpNumbers.removeClass('animate-zoom');
+							}
+						}
+				 );
+				 
+				 $('#pop-up-btn-3').click(
+                        function(){
+						    $("#pop-up-window-3").addClass('animate-to-bottom');
+							
+							 setTimeout(function() {
+									$("#pop-up-window-3").addClass('animate-zoom');
+                             }, 1500);
+							
+						    for(i = 0; i < 5; i++) {
+							      var popUpNumbers = $("#pop-up-window-"+i);
+								  if (i === 3) { continue; }
+							      popUpNumbers.removeClass('animate-to-bottom');
+							      popUpNumbers.removeClass('animate-zoom');
+							}
+						}
+				 );
+				 
+				 $('#pop-up-btn-4').click(
+                        function(){
+						    $("#pop-up-window-4").addClass('animate-to-bottom');
+							
+							 setTimeout(function() {
+									$("#pop-up-window-4").addClass('animate-zoom');
+                             }, 1500);
+							
+						    for(i = 0; i < 5; i++) {
+							      var popUpNumbers = $("#pop-up-window-"+i);
+								  if (i === 4) { continue; }
+							      popUpNumbers.removeClass('animate-to-bottom');
+							      popUpNumbers.removeClass('animate-zoom');
+							}
+						}
+				 );
+			 
+
+		 
+		 </script>
+	 
+	 </body>
+	 
+
+</html>
